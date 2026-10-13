@@ -551,6 +551,73 @@ function showToast(message, type = 'info') {
 }
 
 // ==========================================================================
+// 12. BOTÓN FLOTANTE DE WHATSAPP (TAMPICO & MADERO)
+// ==========================================================================
+function setupFloatingWhatsappWidget() {
+  const widget = document.getElementById('whatsappFloatingWidget');
+  const toggleBtn = document.getElementById('btnWhatsappFloat');
+  const popup = document.getElementById('whatsappPopup');
+  const closeBtn = document.getElementById('btnWaClosePopup');
+
+  if (!widget || !toggleBtn || !popup) return;
+
+  function openPopup() {
+    widget.classList.add('is-open');
+    toggleBtn.setAttribute('aria-expanded', 'true');
+    popup.setAttribute('aria-hidden', 'false');
+  }
+
+  function closePopup() {
+    widget.classList.remove('is-open');
+    toggleBtn.setAttribute('aria-expanded', 'false');
+    popup.setAttribute('aria-hidden', 'true');
+  }
+
+  function toggle() {
+    const isOpen = widget.classList.contains('is-open');
+    if (isOpen) {
+      closePopup();
+    } else {
+      openPopup();
+    }
+  }
+
+  toggleBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    toggle();
+  });
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      closePopup();
+    });
+  }
+
+  // Cerrar al hacer clic en enlaces dentro del popup
+  popup.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      closePopup();
+    });
+  });
+
+  // Cerrar al hacer clic fuera del widget
+  document.addEventListener('click', (e) => {
+    if (!widget.contains(e.target)) {
+      closePopup();
+    }
+  });
+
+  // Cerrar con la tecla Escape
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape' && widget.classList.contains('is-open')) {
+      closePopup();
+      toggleBtn.focus();
+    }
+  });
+}
+
+// ==========================================================================
 // INICIALIZACIÓN
 // ==========================================================================
 document.addEventListener('DOMContentLoaded', () => {
@@ -564,4 +631,6 @@ document.addEventListener('DOMContentLoaded', () => {
   setupHeaderAndScrollspy();
   setupMobileMenu();
   setupMenuInteractions();
+  setupFloatingWhatsappWidget();
 });
+
