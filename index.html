@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tacostada Tampico | El antojo no se discute — Tacos, Burgers & Papas Asadas</title>
+  
+  <!-- SEO & Metadatos Principales -->
+  <meta name="description" content="Tacostada en Tampico y Ciudad Madero: los auténticos tacos al pastor, hamburguesas mamalonas de sirloin, papas asadas preparadas y antojitos mexicanos. Consulta el menú digital y pide a domicilio.">
+  <meta name="keywords" content="Tacostada, Tacostada Tampico, tacos al pastor Tampico, hamburguesas mamalonas, papas asadas Tampico, comida a domicilio Tampico, Ciudad Madero">
+  <meta name="author" content="NEXORA — Demo Comercial">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Redes Sociales -->
+  <meta property="og:type" content="restaurant">
+  <meta property="og:title" content="Tacostada Tampico | El antojo no se discute">
+  <meta property="og:description" content="Tacos al pastor, hamburguesas mamalonas y papas asadas en Tampico y Ciudad Madero. Menú interactivo con precios confirmados.">
+  <meta property="og:image" content="assets/img/ref-tacos-pastor-800.jpg">
+  <meta property="og:locale" content="es_MX">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tacostada Tampico | Menú Digital y Especialidades">
+  <meta name="twitter:description" content="Tacos, hamburguesas y papas asadas en Tampico y Madero. Propuesta digital por NEXORA.">
+  <meta name="twitter:image" content="assets/img/ref-tacos-pastor-800.jpg">
+
+  <!-- Google Fonts: Bebas Neue, Syne & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Syne:wght@700;800&display=swap" rel="stylesheet">
+
+  <!-- Estilos del Proyecto -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon Provisional SVG Inline -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%230b0c0e'/%3E%3Cpath d='M6 18c0-5 4.5-9 10-9s10 4 10 9v2H6v-2z' fill='%23d63031'/%3E%3Ccircle cx='16' cy='13' r='2' fill='%23e5a83b'/%3E%3C/svg%3E">
+
+  <!-- Datos Estructurados JSON-LD (Schema.org Restaurant) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Tacostada",
+    "image": "assets/img/ref-tacos-pastor-800.jpg",
+    "servesCuisine": "Mexicana, Tacos, Hamburguesas",
+    "priceRange": "$$",
+    "slogan": "El antojo no se discute",
+    "department": [
+      {
+        "@type": "Restaurant",
+        "name": "Tacostada — Sucursal Sexta Avenida",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Río Pánuco y Andador 1 #217, Col. Emilio Portes Gil / Sexta Avenida",
+          "addressLocality": "Tampico",
+          "addressRegion": "Tamaulipas",
+          "postalCode": "89316",
+          "addressCountry": "MX"
+        },
+        "telephone": "+52-833-293-1012"
+      },
+      {
+        "@type": "Restaurant",
+        "name": "Tacostada — Sucursal Unidad Nacional",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Oaxaca #101-B, Col. Unidad Nacional",
+          "addressLocality": "Ciudad Madero",
+          "addressRegion": "Tamaulipas",
+          "addressCountry": "MX"
+        },
+        "telephone": "+52-833-160-0865"
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- =========================================================================
+       BARRA DE DEMO COMERCIAL (NEXORA)
+       ========================================================================= -->
+  <aside class="demo-banner" aria-label="Información de la demostración comercial">
+    <div class="container demo-banner__inner">
+      <div class="demo-banner__text">
+        <span class="demo-banner__badge">Propuesta Comercial</span>
+        <strong>Demostración de presencia digital</strong> diseñada para Tacostada Tampico. Datos públicos verificados.
+      </div>
+      <div class="demo-banner__nexora">
+        Desarrollado por <strong>NEXORA</strong>
+      </div>
+    </div>
+  </aside>
+
+  <!-- =========================================================================
+       HEADER / ENCABEZADO
+       ========================================================================= -->
+  <header class="site-header" id="header" role="banner">
+    <div class="container site-header__inner">
+      
+      <!-- Logotipo tipográfico -->
+      <a href="#inicio" class="brand" aria-label="Tacostada Tampico — Inicio">
+        <span class="brand__title">TACOS<span>TADA</span></span>
+        <span class="brand__city">TAMPICO</span>
+      </a>
+
+      <!-- Navegación de escritorio -->
+      <nav class="nav-desktop" aria-label="Navegación principal">
+        <a href="#inicio" class="nav-desktop__link is-active">Inicio</a>
+        <a href="#especialidades" class="nav-desktop__link">Especialidades</a>
+        <a href="#menu" class="nav-desktop__link">Menú Digital</a>
+        <a href="#pedido" class="nav-desktop__link">Pedir Ahora</a>
+        <a href="#nosotros" class="nav-desktop__link">Nosotros</a>
+        <a href="#ubicacion" class="nav-desktop__link">Ubicación</a>
+      </nav>
+
+      <!-- Botón de acción destacado -->
+      <div class="header-actions">
+        <a href="#pedido" class="btn btn--primary btn--sm" id="btnHeaderCta">
+          <span>Pedir en Línea</span>
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+
+        <!-- Botón Menú Móvil -->
+        <button class="btn-mobile-toggle" id="btnMobileToggle" aria-label="Abrir menú de navegación" aria-expanded="false" aria-controls="mobileNav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Navegación Móvil (Drawer) -->
+  <nav class="mobile-nav" id="mobileNav" aria-label="Menú móvil" aria-hidden="true">
+    <a href="#inicio" class="mobile-nav__link">Inicio</a>
+    <a href="#especialidades" class="mobile-nav__link">Especialidades</a>
+    <a href="#menu" class="mobile-nav__link">Menú Digital</a>
+    <a href="#pedido" class="mobile-nav__link">Pedir Ahora</a>
+    <a href="#nosotros" class="mobile-nav__link">Nosotros</a>
+    <a href="#ubicacion" class="mobile-nav__link">Ubicación y Horarios</a>
+    <a href="#pedido" class="btn btn--primary btn--lg" style="margin-top: 16px;">Ver Opciones de Entrega</a>
+  </nav>
+
+  <main id="mainContent">
+
+    <!-- =========================================================================
+         SECCIÓN 1: HERO GASTRONÓMICO
+         ========================================================================= -->
+    <section class="hero" id="inicio" aria-labelledby="heroTitle">
+      <div class="container hero__grid">
+        
+        <!-- Contenido editorial del Hero -->
+        <div class="hero__content">
+          <div class="hero__pill">
+            <span class="hero__pill-dot"></span>
+            Tampico & Ciudad Madero
+          </div>
+
+          <h1 class="hero__title" id="heroTitle">
+            EL ANTOJO <span>NO SE DISCUTE.</span>
+          </h1>
+
+          <p class="hero__subtitle">
+            Tacos al pastor, hamburguesas mamalonas con sirloin y papas asadas bien preparadas para cuando el hambre habla en serio.
+          </p>
+
+          <div class="hero__actions">
+            <a href="#menu" class="btn btn--primary btn--lg" id="btnHeroExplorar">
+              <span>Explorar Menú</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </a>
+            <a href="#ubicacion" class="btn btn--secondary btn--lg">
+              <span>Cómo Llegar</span>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </a>
+          </div>
+
+          <!-- Métricas y credenciales del restaurante -->
+          <div class="hero__metrics">
+            <div class="hero__metric-item">
+              <strong>2 SUCURSALES</strong>
+              <span>Tampico y Madero</span>
+            </div>
+            <div class="hero__metric-item">
+              <strong>DESDE $17 MXN</strong>
+              <span>Tacos de pastor y fajita</span>
+            </div>
+            <div class="hero__metric-item">
+              <strong>A DOMICILIO</strong>
+              <span>DiDi Food, Rappi & WhatsApp</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Fotografía Gastronómica Dominante -->
+        <div class="hero__media">
+          <div class="hero__image-wrapper">
+            <picture>
+              <source srcset="assets/img/ref-tacos-pastor-480.jpg 480w, assets/img/ref-tacos-pastor-800.jpg 800w, assets/img/ref-tacos-pastor-1376.jpg 1376w" sizes="(max-width: 768px) 100vw, 50vw">
+              <img 
+                src="assets/img/ref-tacos-pastor-800.jpg" 
+                alt="Tacos al pastor mexicanos con piña caramelizada, cebollita y salsas sobre tabla de piedra" 
+                width="800" 
+                height="447" 
+                fetchpriority="high"
+                loading="eager">
+            </picture>
+          </div>
+
+          <!-- Tarjeta flotante de recomendación -->
+          <div class="hero__floating-card">
+            <div class="hero__floating-icon" aria-hidden="true">★</div>
+            <div>
+              <div class="hero__floating-title">Recomendación de la Casa</div>
+              <div class="hero__floating-desc">Orden de 10 Tacos al Pastor + 1/2 L de Agua Gratis · $210 MXN</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECCIÓN 2: ESPECIALIDADES ("LOS FAVORITOS DEL ANTOJO")
+         ========================================================================= -->
+    <section class="section" id="especialidades" aria-labelledby="favTitle">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">Selección Especial</span>
+          <h2 class="section-title" id="favTitle">LOS FAVORITOS DEL ANTOJO</h2>
+          <p class="section-description">
+            Los platillos que han construido la fama de Tacostada en la zona conurbada. Porciones generosas, sabor auténtico e ingredientes de primera calidad.
+          </p>
+        </header>
+
+        <!-- Grid de Favoritos renderizado con datos -->
+        <div class="favorites-grid" id="favoritesContainer">
+          <!-- Renderizado dinámico desde menu-data.js -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECCIÓN 3: MENÚ DIGITAL INTERACTIVO
+         ========================================================================= -->
+    <section class="section menu-section" id="menu" aria-labelledby="menuTitle">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">Catálogo Completo</span>
+          <h2 class="section-title" id="menuTitle">MENÚ DIGITAL</h2>
+          <p class="section-description">
+            Explora todas nuestras categorías con precios confirmados. Selecciona cualquier platillo para prepararlo en tu pedido por WhatsApp o elegir tu plataforma de delivery.
+          </p>
+        </header>
+
+        <!-- Controles de Menú: Buscador y Filtro por Categorías -->
+        <div class="menu-controls">
+          
+          <div class="menu-search-wrapper">
+            <svg class="menu-search-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+            <input 
+              type="search" 
+              class="menu-search-input" 
+              id="menuSearchInput" 
+              placeholder="Buscar tacos, hamburguesa mamalona, papas..." 
+              aria-label="Buscar productos en el menú">
+            <button class="menu-search-clear" id="menuSearchClear" aria-label="Limpiar búsqueda">&times;</button>
+          </div>
+
+          <div class="menu-categories" id="categoryPills" role="tablist" aria-label="Categorías del menú">
+            <!-- Botones de categoría generados dinámicamente -->
+          </div>
+
+        </div>
+
+        <div class="menu-results-counter" id="menuResultsCounter" aria-live="polite">
+          Mostrando todos los platillos disponibles
+        </div>
+
+        <!-- Grid de Platillos del Menú -->
+        <div class="menu-grid" id="menuGrid" role="region" aria-label="Lista de platillos">
+          <!-- Platillos inyectados dinámicamente -->
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECCIÓN 4: PEDIDO O CONTACTO (WHATSAPP + DELIVERY OFICIAL)
+         ========================================================================= -->
+    <section class="section order-section" id="pedido" aria-labelledby="orderTitle">
+      <div class="container">
+        
+        <div class="order-box">
+          <div class="order-grid">
+            
+            <!-- Generador de Pedido por WhatsApp -->
+            <div class="order-generator">
+              <h3 class="order-generator__title">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#25d366" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+                Preparar Pedido por WhatsApp
+              </h3>
+              <p class="order-generator__desc">
+                Arma tu mensaje de forma rápida y envíalo directamente al teléfono de servicio de Tacostada.
+              </p>
+
+              <form id="orderForm" onsubmit="event.preventDefault();">
+                <div class="order-form-group">
+                  <label for="orderBranchSelect">Sucursal para tu pedido</label>
+                  <select id="orderBranchSelect" class="order-select">
+                    <option value="sexta-avenida">Sucursal Sexta Avenida (Tampico) · 833 293 1012</option>
+                    <option value="unidad-nacional">Sucursal Unidad Nacional (Madero) · 833 160 0865</option>
+                  </select>
+                </div>
+
+                <div class="order-form-group">
+                  <label for="orderProductSelect">Platillo principal</label>
+                  <select id="orderProductSelect" class="order-select">
+                    <option value="">Selecciona un platillo del menú...</option>
+                    <!-- Opciones inyectadas dinámicamente -->
+                  </select>
+                </div>
+
+                <div class="order-form-group">
+                  <label for="orderNotes">Detalles o extras (salsas, sin cebolla, dirección...)</label>
+                  <textarea id="orderNotes" class="order-textarea" placeholder="Ejemplo: 2 órdenes de tacos de pastor con todo, salsa verde extra. Entrega a domicilio."></textarea>
+                </div>
+
+                <button type="button" class="btn btn--whatsapp btn--lg" id="btnSendWhatsapp" style="width: 100%;">
+                  <span>Abrir WhatsApp con este Pedido</span>
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                </button>
+
+                <p class="order-disclaimer">
+                  * Este botón prepara tu mensaje en WhatsApp con los datos seleccionados. El pedido debe ser confirmado y aceptado directamente por el personal de Tacostada.
+                </p>
+              </form>
+            </div>
+
+            <!-- Canales oficiales de Delivery -->
+            <div>
+              <span class="section-eyebrow">Apps de Entrega</span>
+              <h2 class="section-title" id="orderTitle" style="font-size: 2.5rem; margin-bottom: 16px;">
+                ¿PREFIERES PEDIR POR APLICACIÓN?
+              </h2>
+              <p class="section-description" style="margin-bottom: 24px;">
+                Tacostada cuenta con presencia confirmada en las plataformas de entrega más utilizadas de la zona conurbada Tampico–Madero.
+              </p>
+
+              <div class="delivery-platforms" id="deliveryPlatformsList">
+                
+                <a href="https://web.didiglobal.com/mx/food/tampico-tam/tacostada/5764607748218816287/" target="_blank" rel="noopener noreferrer" class="platform-card">
+                  <div class="platform-card__info">
+                    <strong>DiDi Food México</strong>
+                    <span>Sucursal Sexta Avenida & Unidad Nacional</span>
+                  </div>
+                  <span class="platform-card__badge">Pedir en DiDi</span>
+                </a>
+
+                <a href="https://www.rappi.com.mx/tampico/restaurantes/delivery/503564-tacostada-tampico" target="_blank" rel="noopener noreferrer" class="platform-card">
+                  <div class="platform-card__info">
+                    <strong>Rappi Tampico</strong>
+                    <span>Entrega a domicilio en zona metropolitana</span>
+                  </div>
+                  <span class="platform-card__badge">Pedir en Rappi</span>
+                </a>
+
+                <a href="https://www.ubereats.com/mx/store/tacostada/jMKzQZkUWM2yq7tQkf-WCg" target="_blank" rel="noopener noreferrer" class="platform-card">
+                  <div class="platform-card__info">
+                    <strong>Uber Eats</strong>
+                    <span>Cobertura en zona Las Américas y alrededores</span>
+                  </div>
+                  <span class="platform-card__badge">Ver en Uber</span>
+                </a>
+
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECCIÓN 5: ¿QUIÉNES SOMOS? (IDENTIDAD GASTRONÓMICA)
+         ========================================================================= -->
+    <section class="section about-section" id="nosotros" aria-labelledby="aboutTitle">
+      <div class="container about-grid">
+        
+        <div>
+          <span class="section-eyebrow">Tradición y Sabor Local</span>
+          <h2 class="section-title" id="aboutTitle">EL CONCEPTO TACOSTADA</h2>
+          <p class="section-description" style="margin-bottom: 20px;">
+            Tacostada nació para resolver una pregunta clásica: cuando hay hambre de verdad, ¿por qué elegir entre un taco bien servido, una tostada crujiente o una hamburguesa monumental?
+          </p>
+          <p class="section-description" style="margin-bottom: 28px;">
+            En nuestras sucursales de Tampico y Ciudad Madero combinamos el sazón de los clásicos taqueros del noreste mexicano con creaciones contundentes como la <em>Hamburguesa La Mamalona</em> y las <em>Papas Asadas</em> rellenas de pastor y fajita.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-box">
+              <div class="highlight-box__icon">🌮</div>
+              <strong>Trompo y Fajita</strong>
+              <p>Carne al pastor marinada con piña y cortes suaves de res sazonados al momento.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-box__icon">🍔</div>
+              <strong>Sirloin Mamalón</strong>
+              <p>Hamburguesas con carne de res auténtica, quesos derretidos y aderezo especial.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-box__icon">🥔</div>
+              <strong>Papas de Medio Kilo</strong>
+              <p>Papa horneada rellena con asadero, cheddar, crema y tostadas doradas.</p>
+            </div>
+            <div class="highlight-box">
+              <div class="highlight-box__icon">🥤</div>
+              <strong>Aguas de Litro</strong>
+              <p>Horchata, jamaica y pepino con limón preparados para acompañar el antojo.</p>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero__image-wrapper" style="aspect-ratio: 4 / 3;">
+            <img 
+              src="assets/img/ref-hamburguesa-800.jpg" 
+              alt="Hamburguesa artesanal de sirloin con tocino y papas doradas estilo Tacostada" 
+              loading="lazy" 
+              width="800" 
+              height="597">
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- =========================================================================
+         SECCIÓN 6: UBICACIÓN Y HORARIOS
+         ========================================================================= -->
+    <section class="section" id="ubicacion" aria-labelledby="locationsTitle">
+      <div class="container">
+        
+        <header class="section-header">
+          <span class="section-eyebrow">Encuéntranos</span>
+          <h2 class="section-title" id="locationsTitle">SUCURSALES Y HORARIOS</h2>
+          <p class="section-description">
+            Visítanos en cualquiera de nuestros puntos de venta en la zona metropolitana o comunícate vía telefónica para ordenar tu comida.
+          </p>
+        </header>
+
+        <div class="locations-grid" id="branchesContainer">
+          <!-- Renderizado dinámico desde RESTAURANT_INFO en menu-data.js -->
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- =========================================================================
+       MODAL DE DETALLE DE PLATILLO
+       ========================================================================= -->
+  <div class="dish-modal-backdrop" id="dishModalBackdrop" role="dialog" aria-modal="true" aria-labelledby="modalDishTitle" aria-hidden="true">
+    <div class="dish-modal" id="dishModal">
+      <button class="dish-modal__close" id="btnModalClose" aria-label="Cerrar ventana emergente">&times;</button>
+      <div class="dish-modal__media" id="modalDishMedia">
+        <!-- Imagen si existe -->
+      </div>
+      <div class="dish-modal__body">
+        <div class="dish-modal__header">
+          <h3 class="dish-modal__title" id="modalDishTitle">Platillo</h3>
+          <div class="dish-modal__price" id="modalDishPrice">$0.00</div>
+        </div>
+        <p class="dish-modal__desc" id="modalDishDesc"></p>
+        
+        <div style="display: flex; gap: 12px; flex-wrap: wrap;">
+          <button class="btn btn--whatsapp btn--lg" id="btnModalOrderWhatsapp" style="flex-grow: 1;">
+            <span>Pedir este platillo por WhatsApp</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Contenedor para notificaciones Toast -->
+  <div class="toast-container" id="toastContainer" aria-live="polite"></div>
+
+  <!-- =========================================================================
+       FOOTER / PIE DE PÁGINA
+       ========================================================================= -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      
+      <div class="footer-grid">
+        
+        <div class="footer-col__brand">
+          <a href="#inicio" class="brand" aria-label="Tacostada Tampico">
+            <span class="brand__title">TACOS<span>TADA</span></span>
+            <span class="brand__city">TAMPICO</span>
+          </a>
+          <p class="footer-col__desc">
+            La propuesta gastronómica para cuando el hambre habla en serio. Tacos, tostadas, hamburguesas y papas asadas con personalidad única.
+          </p>
+          <div class="footer-social-links">
+            <a href="https://www.instagram.com/tacostadatampico/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Instagram de Tacostada Tampico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+            </a>
+            <a href="https://www.facebook.com/Tacostadatampico/" target="_blank" rel="noopener noreferrer" class="social-btn" aria-label="Facebook de Tacostada Tampico">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Navegación</h4>
+          <ul class="footer-nav">
+            <li><a href="#inicio" class="footer-nav__link">Inicio</a></li>
+            <li><a href="#especialidades" class="footer-nav__link">Especialidades</a></li>
+            <li><a href="#menu" class="footer-nav__link">Menú Digital</a></li>
+            <li><a href="#pedido" class="footer-nav__link">Opciones de Pedido</a></li>
+            <li><a href="#nosotros" class="footer-nav__link">Nosotros</a></li>
+            <li><a href="#ubicacion" class="footer-nav__link">Ubicación y Sucursales</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Contacto</h4>
+          <ul class="footer-nav">
+            <li><span style="color: var(--text-dim); font-size: 0.75rem;">MATRIZ SEXTA AV.</span></li>
+            <li><a href="tel:8332931012" class="footer-nav__link">📞 833 293 1012</a></li>
+            <li><span style="color: var(--text-dim); font-size: 0.75rem; margin-top: 8px; display: block;">SUC. UNIDAD NACIONAL</span></li>
+            <li><a href="tel:8331600865" class="footer-nav__link">📞 833 160 0865</a></li>
+            <li><span class="footer-nav__link" style="color: var(--text-dim); margin-top: 6px;">Instagram: @tacostadatampico</span></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-heading">Aviso Comercial</h4>
+          <p style="font-size: 0.8125rem; color: var(--text-muted); line-height: 1.6; margin-bottom: 12px;">
+            Esta es una propuesta comercial desarrollada para fines de demostración técnica y de diseño. Precios e información tomados de fuentes públicas vigentes.
+          </p>
+          <div class="footer-nexora-card">
+            <span>Diseño & Desarrollo:</span>
+            <strong>NEXORA</strong>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Tacostada Tampico. Todos los derechos reservados sobre su marca comercial.
+        </div>
+        <div>
+          Experiencia digital y propuesta web desarrollada por <strong>NEXORA</strong>.
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts de la Aplicación -->
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>

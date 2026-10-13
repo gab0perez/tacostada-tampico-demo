@@ -1,0 +1,23 @@
+{
+  "name": "tacostada-tampico-demo",
+  "version": "1.0.0",
+  "description": "Demostración comercial web desarrollada por NEXORA para Tacostada Tampico.",
+  "type": "module",
+  "scripts": {
+    "test": "node tests/test-site.js",
+    "dev": "npx serve . -l 3000",
+    "start": "npx serve . -l 3000",
+    "optimize-images": "powershell -ExecutionPolicy Bypass -File scripts/optimize-images.ps1"
+  },
+  "keywords": [
+    "tacostada",
+    "tampico",
+    "nexora",
+    "demo",
+    "restaurant",
+    "menu-digital"
+  ],
+  "author": "NEXORA",
+  "license": "UNLICENSED",
+  "private": true
+}
